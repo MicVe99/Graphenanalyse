@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="functions.js"></script>
+        <title>Graphenanalysierer</title>
+        <h1>Kranker Graphenanalysierer</h1>
+    </head>
+
+    <body>
+        <div class="functioninput">
+            <label for="inputFunction">Funktion eingeben</label>
+            <input type="text" id="inputFunction">
+            <div class= buttonrow>
+                <button id="draw" onclick="drawGraph()">Zeichnen</button>
+                <button id="der">Ableiten</button>
+                <button id="int">integrieren</button>
+            </div>
+        </div>
+        <div class="presentation">
+            <canvas id="functionCanvas"></canvas>
+            <ol id="functionList"></ol>
+        </div>
+    </body>
+</html>

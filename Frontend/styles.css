@@ -1,0 +1,45 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.functioninput {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    width: fit-content;
+}
+
+.functioninput *{
+    width: auto;
+    margin: 5px 0; 
+}
+
+#functionCanvas {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+#functionList {
+    height: 500px;
+    padding:0;
+    width: fit-content;
+    min-width: 200px;
+    max-width: 700px;
+    margin: 0 5px;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin-left: 25px;
+    margin-bottom: 3px;
+}
+
+.deleteBtn {
+    margin-left: 5px;
+    float: right;
+}
