@@ -14,7 +14,7 @@ html {
     margin: 5px 0; 
 }
 
-#functionCanvas {
+#canvas {
     height: 500px;
     width: 500px;
     border: 1px solid black;

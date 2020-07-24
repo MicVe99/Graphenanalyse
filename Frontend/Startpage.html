@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="styles.css">
         <script src="functions.js"></script>
         <title>Graphenanalysierer</title>
-        <h1>Kranker Graphenanalysierer</h1>
+        <h1>Graphenanalysierer</h1>
     </head>
 
     <body>
@@ -18,7 +18,32 @@
             </div>
         </div>
         <div class="presentation">
-            <canvas id="functionCanvas"></canvas>
+            <canvas id="canvas"></canvas>
+            <script>
+var bw = 500;
+    var bh = 500;
+    var cw = bw + 1;
+    var ch = bh + 1;
+
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    function drawBoard(){
+        for (var x = 0; x <= bw; x += 25) {
+            context.moveTo(0.5 + x, 0);
+            context.lineTo(0.5 + x, bh);
+        }
+
+        for (var x = 0; x <= bh; x += 25) {
+            context.moveTo(0, 0.5 + x);
+            context.lineTo(bw, 0.5 + x);
+        }
+
+        context.strokeStyle = "black";
+        context.stroke();
+    }
+
+    drawBoard();
+            </script>
             <ol id="functionList"></ol>
         </div>
     </body>
